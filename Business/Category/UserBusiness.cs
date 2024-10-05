@@ -26,6 +26,8 @@ namespace Business.Category
         Task<IBusinessResult> Login(LoginUserDTO loginUserDTO); // Thêm phương thức login
         Task<IBusinessResult> Register(CreateUserDTO userDTO);
         Task<IBusinessResult> RefreshToken(string token);
+
+        Task<IBusinessResult> SearchbyName(string name);
     }
 
     public class UserBusiness : IUserBusiness
@@ -297,6 +299,23 @@ namespace Business.Category
             return principal;
         }
 
+        public async Task<IBusinessResult> SearchbyName(string name)
+        {
+            try
+            {
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(name);
+                if (user == null)
+                {
+                    return new BusinessResult(Const.WARNING_INCOMPLETE_DATA_CODE, Const.WARNING_INCOMPLETE_DATA_MSG);
+                }
+                return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG);
 
+
+
+            }
+            catch (Exception ex) { 
+                return new BusinessResult(Const.ERROR_EXCEPTION,ex.Message);
+            }
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace DATA
         private UserRepo _userRepository;
         private PostTypeRepo _postTypeRepository;
         private MemberShipPlanRepo _memberShipPlanRepository;
+        private MembershipPlanAsmRepo _membershipPlanAsmRepo;
         private PostRepo _postRepo;
         private MembershipRepo _membershipRepo;
         private ReviewRepo _reviewRepo;
@@ -61,6 +62,14 @@ namespace DATA
             get
             {
                 return _membershipRepo ??= new MembershipRepo(_context);
+            }
+        }
+
+        public MembershipPlanAsmRepo MembershipPlanAsmRepo
+        {
+            get
+            {
+                return _membershipPlanAsmRepo ??= new MembershipPlanAsmRepo(_context);
             }
         }
 

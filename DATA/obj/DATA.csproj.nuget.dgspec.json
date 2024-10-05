@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EXE201\\EXE201\\EXE\\DATA\\DATA.csproj": {}
+    "D:\\EXE201C\\BE\\DATA\\DATA.csproj": {}
   },
   "projects": {
-    "D:\\EXE201\\EXE201\\EXE\\DATA\\DATA.csproj": {
+    "D:\\EXE201C\\BE\\DATA\\DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE201\\EXE201\\EXE\\DATA\\DATA.csproj",
+        "projectUniqueName": "D:\\EXE201C\\BE\\DATA\\DATA.csproj",
         "projectName": "DATA",
-        "projectPath": "D:\\EXE201\\EXE201\\EXE\\DATA\\DATA.csproj",
+        "projectPath": "D:\\EXE201C\\BE\\DATA\\DATA.csproj",
         "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE201\\EXE201\\EXE\\DATA\\obj\\",
+        "outputPath": "D:\\EXE201C\\BE\\DATA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",

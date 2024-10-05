@@ -85,4 +85,4 @@ D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
 D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
 D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.sourcelink.json
 D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
-D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CopyComplete
+D:\Exe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.Up2Date

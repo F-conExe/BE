@@ -107,7 +107,7 @@ namespace API.Controllers
             return Ok(result);
         }
 
-      
+
 
         [HttpDelete("deleteUser/{id}")]
         public async Task<IActionResult> DeleteUser(int id)
@@ -124,6 +124,23 @@ namespace API.Controllers
             catch (Exception ex)
             {
                 // Log the exception
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+        [HttpGet("searchByName")]
+        public async Task<IActionResult> SearchByName(string name)
+        {
+            try
+            {
+                var result = await _userBusiness.SearchbyName(name);
+                if (result == null)
+                {
+                    return NotFound(new { message = "User not found" });
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }

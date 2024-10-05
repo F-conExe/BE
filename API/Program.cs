@@ -32,8 +32,8 @@ builder.Services.AddAuthentication(options =>
     options.SaveToken = true;
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
+        ValidateIssuer = false,
+        ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
         ValidIssuer = builder.Configuration["Jwt:Issuer"],
@@ -60,6 +60,7 @@ builder.Services.AddScoped<IMembershipPlanBusiness, MembershipPlanBusiness>();
 builder.Services.AddScoped<IPostBusiness, PostBusiness>();
 builder.Services.AddScoped<IMemberBusiness, MemberBusiness>();
 builder.Services.AddScoped<IReviewBusiness, ReviewBusiness>();
+builder.Services.AddScoped<IMembershipPlanAsmBusiness, MembershipPlanAsmBusiness>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

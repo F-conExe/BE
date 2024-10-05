@@ -17,13 +17,16 @@ namespace API.Controllers
         {
             _postBusiness = postBusiness;
         }
-
         [HttpGet("getAllPosts")]
         public async Task<IActionResult> GetAllPosts()
         {
             try
             {
                 var result = await _postBusiness.GetAll();
+                if (result == null ) 
+                {
+                    return NotFound(new { message = "No posts found" });
+                }
                 return Ok(result);
             }
             catch (Exception ex)
@@ -32,6 +35,7 @@ namespace API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
+
 
         [HttpGet("getById/{id}")]
         public async Task<IActionResult> GetPostById(int id)
@@ -86,5 +90,41 @@ namespace API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
+        [HttpGet("search")] // Changed from "/search" to "search"
+        public async Task<IActionResult> Search(string skill = null, decimal? minSalary = null, decimal? maxSalary = null, int? postTypeId = null)
+        {
+            try
+            {
+                var result = await _postBusiness.Search(skill, minSalary, maxSalary, postTypeId);
+                if (result == null )
+                {
+                    return NotFound(new { message = "No posts found matching the criteria" });
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("getPostCount")]
+        public async Task<IActionResult> GetPostCount()
+        {
+            try
+            {
+                var count = await _postBusiness.GetPostCount();
+                return Ok(new { Count = count });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
+
+
+
     }
 }

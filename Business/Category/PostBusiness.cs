@@ -4,6 +4,7 @@ using Business.DTO.Update;
 using Common;
 using DATA;
 using DATA.Models;
+using DATA.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,11 @@ namespace Business.Category
         Task<IBusinessResult> Save(CreatePostDTO post);
         Task<IBusinessResult> Update(UpdatePostDTO post);
         Task<IBusinessResult> DeleteById(int id);
+
+        Task<IBusinessResult> Search(string skill, decimal? minSalary, decimal? maxSalary, int? postTypeId);
+
+        Task<int> GetPostCount();
+
     }
 
     public class PostBusiness : IPostBusiness
@@ -59,12 +65,10 @@ namespace Business.Category
             try
             {
                 var post = await _unitOfWork.PostRepo.GetAllAsync();
-
                 if (post == null || !post.Any())
                 {
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
                 }
-
                 return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, post);
             }
             catch (Exception ex)
@@ -72,6 +76,7 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
+
 
         public async Task<IBusinessResult> GetById(int id)
         {
@@ -98,10 +103,22 @@ namespace Business.Category
             }
         }
 
+        public async Task<int> GetPostCount()
+        {
+            return await _unitOfWork.PostRepo.GetPostCount();
+        }
+
         public async Task<IBusinessResult> Save(CreatePostDTO postdto)
         {
             try
             {
+                // Validate if the post type exists
+                var existType = await _unitOfWork.PostTypeRepository.GetByIdAsync(postdto.PostTypeId);
+                if (existType == null)
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, "Invalid Post Type ID");
+                }
+
                 var post = new Post
                 {
                     UserId = postdto.UserId,
@@ -109,11 +126,12 @@ namespace Business.Category
                     Title = postdto.Title,
                     Description = postdto.Description,
                     BudgetOrSalary = postdto.BudgetOrSalary,
-                    Skills = postdto.Skills,    
+                    Skills = postdto.Skills,
                     Status = postdto.Status,
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,
                 };
+
                 int result = await _unitOfWork.PostRepo.CreateAsync(post);
                 if (result > 0)
                 {
@@ -129,6 +147,26 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
+
+        public async Task<IBusinessResult> Search(string skill, decimal? minSalary, decimal? maxSalary, int? postTypeId)
+        {
+            try
+            {
+                var posts = await _unitOfWork.PostRepo.SearchAsync(skill, minSalary, maxSalary,postTypeId);
+                if (posts == null || !posts.Any())
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
+                }
+                return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, posts);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+            }
+        }
+
+       
 
         public async Task<IBusinessResult> Update(UpdatePostDTO post)
         {
@@ -182,6 +220,9 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
+
+        
 
     }
 }

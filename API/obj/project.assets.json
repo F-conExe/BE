@@ -3428,11 +3428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EXE201\\EXE201\\EXE\\API\\API.csproj",
+      "projectUniqueName": "D:\\EXE201C\\BE\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\EXE201\\EXE201\\EXE\\API\\API.csproj",
+      "projectPath": "D:\\EXE201C\\BE\\API\\API.csproj",
       "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-      "outputPath": "D:\\EXE201\\EXE201\\EXE\\API\\obj\\",
+      "outputPath": "D:\\EXE201C\\BE\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3450,8 +3450,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\EXE201\\EXE201\\EXE\\Business\\Business.csproj": {
-              "projectPath": "D:\\EXE201\\EXE201\\EXE\\Business\\Business.csproj"
+            "D:\\EXE201C\\BE\\Business\\Business.csproj": {
+              "projectPath": "D:\\EXE201C\\BE\\Business\\Business.csproj"
             }
           }
         }

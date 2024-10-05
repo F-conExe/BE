@@ -17,7 +17,14 @@ namespace DATA.Repository
 
         public async Task<User> FindByUsernameAsync(string username)
         {
+            if (string.IsNullOrEmpty(username))
+            {
+                throw new ArgumentException("Username cannot be null or empty.", nameof(username));
+            }
+
             return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         }
+
+
     }
 }
