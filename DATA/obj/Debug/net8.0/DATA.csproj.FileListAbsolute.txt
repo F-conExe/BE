@@ -1,0 +1,73 @@
+D:\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.deps.json
+D:\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.runtimeconfig.json
+D:\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.AssemblyReference.cache
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfoInputs.cache
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfo.cs
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.dll
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\refint\DATA.dll
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.genruntimeconfig.cache
+D:\EXE201\EXE\DATA\obj\Debug\net8.0\ref\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.deps.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.runtimeconfig.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.AssemblyReference.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfoInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfo.cs
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.CoreCompileInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\refint\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.genruntimeconfig.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\DATA\obj\Debug\net8.0\ref\DATA.dll
+E:\Exe201c\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.deps.json
+E:\Exe201c\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.runtimeconfig.json
+E:\Exe201c\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.dll
+E:\Exe201c\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.pdb
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.AssemblyReference.cache
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfoInputs.cache
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfo.cs
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.CoreCompileInputs.cache
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.sourcelink.json
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.dll
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\refint\DATA.dll
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.pdb
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.genruntimeconfig.cache
+E:\Exe201c\EXE201\EXE\DATA\obj\Debug\net8.0\ref\DATA.dll
+E:\projecExe201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.deps.json
+E:\projecExe201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.runtimeconfig.json
+E:\projecExe201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.dll
+E:\projecExe201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.pdb
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.AssemblyReference.cache
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfoInputs.cache
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfo.cs
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.CoreCompileInputs.cache
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.sourcelink.json
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.dll
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\refint\DATA.dll
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.pdb
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.genruntimeconfig.cache
+E:\projecExe201\EXE201\EXE\DATA\obj\Debug\net8.0\ref\DATA.dll
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.dll
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\refint\DATA.dll
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.deps.json
+D:\EXE201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.runtimeconfig.json
+D:\EXE201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE201\EXE\DATA\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.AssemblyReference.cache
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfoInputs.cache
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.AssemblyInfo.cs
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.sourcelink.json
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\DATA.genruntimeconfig.cache
+D:\EXE201\EXE201\EXE\DATA\obj\Debug\net8.0\ref\DATA.dll

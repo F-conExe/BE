@@ -1,0 +1,88 @@
+D:\EXE201\EXE\Business\bin\Debug\net8.0\Business.deps.json
+D:\EXE201\EXE\Business\bin\Debug\net8.0\Business.dll
+D:\EXE201\EXE\Business\bin\Debug\net8.0\Business.pdb
+D:\EXE201\EXE\Business\bin\Debug\net8.0\Common.dll
+D:\EXE201\EXE\Business\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE\Business\bin\Debug\net8.0\Common.pdb
+D:\EXE201\EXE\Business\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.dll
+D:\EXE201\EXE\Business\obj\Debug\net8.0\refint\Business.dll
+D:\EXE201\EXE\Business\obj\Debug\net8.0\Business.pdb
+D:\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\Business.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\Common.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\Common.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\bin\Debug\net8.0\DATA.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CopyComplete
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\Business.deps.json
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\Business.dll
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\Business.pdb
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\Common.dll
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\DATA.dll
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\Common.pdb
+E:\Exe201c\EXE201\EXE\Business\bin\Debug\net8.0\DATA.pdb
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.sourcelink.json
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.dll
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\refint\Business.dll
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\Business.pdb
+E:\Exe201c\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\Business.deps.json
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\Business.dll
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\Business.pdb
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\Common.dll
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\DATA.dll
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\Common.pdb
+E:\projecExe201\EXE201\EXE\Business\bin\Debug\net8.0\DATA.pdb
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.sourcelink.json
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.dll
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\refint\Business.dll
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\Business.pdb
+E:\projecExe201\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.dll
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\refint\Business.dll
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.pdb
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\Business.deps.json
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\Business.dll
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\Business.pdb
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\Common.dll
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\Common.pdb
+D:\EXE201\EXE201\EXE\Business\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.sourcelink.json
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\ref\Business.dll
+D:\EXE201\EXE201\EXE\Business\obj\Debug\net8.0\Business.csproj.CopyComplete

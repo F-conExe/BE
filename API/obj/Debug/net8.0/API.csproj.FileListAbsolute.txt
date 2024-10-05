@@ -1,0 +1,393 @@
+D:\EXE201\EXE\API\bin\Debug\net8.0\appsettings.Development.json
+D:\EXE201\EXE\API\bin\Debug\net8.0\appsettings.json
+D:\EXE201\EXE\API\bin\Debug\net8.0\API.exe
+D:\EXE201\EXE\API\bin\Debug\net8.0\API.deps.json
+D:\EXE201\EXE\API\bin\Debug\net8.0\API.runtimeconfig.json
+D:\EXE201\EXE\API\bin\Debug\net8.0\API.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\API.pdb
+D:\EXE201\EXE\API\bin\Debug\net8.0\Azure.Core.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Azure.Identity.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Business.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Common.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE\API\bin\Debug\net8.0\Business.pdb
+D:\EXE201\EXE\API\bin\Debug\net8.0\Common.pdb
+D:\EXE201\EXE\API\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.build.json
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.development.json
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.build.API.props
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API.props
+D:\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\EXE201\EXE\API\obj\Debug\net8.0\scopedcss\bundle\API.styles.css
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.Up2Date
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.dll
+D:\EXE201\EXE\API\obj\Debug\net8.0\refint\API.dll
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.pdb
+D:\EXE201\EXE\API\obj\Debug\net8.0\API.genruntimeconfig.cache
+D:\EXE201\EXE\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\refint\API.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\appsettings.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\API.exe
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\API.deps.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\API.runtimeconfig.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\API.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\API.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Business.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Common.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\DATA.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Business.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\Common.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\DATA.pdb
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.build.API.props
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API.props
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\scopedcss\bundle\API.styles.css
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CopyComplete
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\API.genruntimeconfig.cache
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\NGOC MINH\Desktop\EXE201\EXE\API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\appsettings.Development.json
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\appsettings.json
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\API.exe
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\API.deps.json
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\API.runtimeconfig.json
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\API.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\API.pdb
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Azure.Core.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Azure.Identity.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Business.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Common.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\DATA.dll
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Business.pdb
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\Common.pdb
+E:\Exe201c\EXE201\EXE\API\bin\Debug\net8.0\DATA.pdb
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.sourcelink.json
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.build.json
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.development.json
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.build.API.props
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API.props
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\scopedcss\bundle\API.styles.css
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.Up2Date
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.dll
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\refint\API.dll
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.pdb
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\API.genruntimeconfig.cache
+E:\Exe201c\EXE201\EXE\API\obj\Debug\net8.0\ref\API.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\appsettings.Development.json
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\appsettings.json
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\API.exe
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\API.deps.json
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\API.runtimeconfig.json
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\API.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\API.pdb
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Azure.Core.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Azure.Identity.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Business.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Common.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\DATA.dll
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Business.pdb
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\Common.pdb
+E:\projecExe201\EXE201\EXE\API\bin\Debug\net8.0\DATA.pdb
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.sourcelink.json
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.build.json
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.development.json
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.build.API.props
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API.props
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\scopedcss\bundle\API.styles.css
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.Up2Date
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.dll
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\refint\API.dll
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.pdb
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\API.genruntimeconfig.cache
+E:\projecExe201\EXE201\EXE\API\obj\Debug\net8.0\ref\API.dll
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.dll
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\refint\API.dll
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.pdb
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\appsettings.Development.json
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\appsettings.json
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\API.exe
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\API.deps.json
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\API.runtimeconfig.json
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\API.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\API.pdb
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Azure.Core.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Azure.Identity.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Business.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Common.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\DATA.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Business.pdb
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Common.pdb
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\DATA.pdb
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.sourcelink.json
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.build.json
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.development.json
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.build.API.props
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API.props
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\scopedcss\bundle\API.styles.css
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.genruntimeconfig.cache
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\ref\API.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\EXE201\EXE201\EXE\API\bin\Debug\net8.0\payos-lib-backend-dotnet.dll
+D:\EXE201\EXE201\EXE\API\obj\Debug\net8.0\API.csproj.CopyComplete
