@@ -144,5 +144,36 @@ namespace API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
+
+        [HttpGet("getCurrentUser")]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            try
+            {
+                // Lấy token từ header Authorization
+                var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+                if (string.IsNullOrEmpty(token))
+                {
+                    return Unauthorized(new { message = "No token provided" });
+                }
+
+                var result = await _userBusiness.GetCurrentUser(token);
+
+                if (result.Success)
+                {
+                    return Ok(result.Data);
+                }
+                else
+                {
+                    return Unauthorized(new { message = result.Message });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
     }
 }

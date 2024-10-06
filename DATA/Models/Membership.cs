@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace DATA.Models;
 
@@ -13,6 +14,7 @@ public partial class Membership
 
     public string Status { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<MembershipPlanAssignment> MembershipPlanAssignments { get; set; } = new List<MembershipPlanAssignment>();
 
     public virtual User User { get; set; }
