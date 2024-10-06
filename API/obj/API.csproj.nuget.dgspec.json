@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BE_EXE201\\BE\\API\\API.csproj": {}
+    "D:\\BE_EXE\\BE\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\BE_EXE201\\BE\\API\\API.csproj": {
+    "D:\\BE_EXE\\BE\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BE_EXE201\\BE\\API\\API.csproj",
+        "projectUniqueName": "D:\\BE_EXE\\BE\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\BE_EXE201\\BE\\API\\API.csproj",
+        "projectPath": "D:\\BE_EXE\\BE\\API\\API.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\BE_EXE201\\BE\\API\\obj\\",
+        "outputPath": "D:\\BE_EXE\\BE\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\BE_EXE201\\BE\\Business\\Business.csproj": {
-                "projectPath": "D:\\BE_EXE201\\BE\\Business\\Business.csproj"
+              "D:\\BE_EXE\\BE\\Business\\Business.csproj": {
+                "projectPath": "D:\\BE_EXE\\BE\\Business\\Business.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "D:\\BE_EXE201\\BE\\Business\\Business.csproj": {
+    "D:\\BE_EXE\\BE\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\BE_EXE\\BE\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
+        "projectPath": "D:\\BE_EXE\\BE\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\BE_EXE201\\BE\\Business\\obj\\",
+        "outputPath": "D:\\BE_EXE\\BE\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -107,11 +107,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
-                "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj"
+              "D:\\BE_EXE\\BE\\Common\\Common.csproj": {
+                "projectPath": "D:\\BE_EXE\\BE\\Common\\Common.csproj"
               },
-              "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj": {
-                "projectPath": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj"
+              "D:\\BE_EXE\\BE\\DATA\\DATA.csproj": {
+                "projectPath": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
+    "D:\\BE_EXE\\BE\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\BE_EXE\\BE\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
+        "projectPath": "D:\\BE_EXE\\BE\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\BE_EXE201\\BE\\Common\\obj\\",
+        "outputPath": "D:\\BE_EXE\\BE\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -221,14 +221,14 @@
         }
       }
     },
-    "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj": {
+    "D:\\BE_EXE\\BE\\DATA\\DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj",
+        "projectUniqueName": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj",
         "projectName": "DATA",
-        "projectPath": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj",
+        "projectPath": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\BE_EXE201\\BE\\DATA\\obj\\",
+        "outputPath": "D:\\BE_EXE\\BE\\DATA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

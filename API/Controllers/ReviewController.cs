@@ -1,6 +1,7 @@
 ﻿using Business.Category;
 using Business.DTO.Create;
 using Business.DTO.Update;
+using Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -62,18 +63,20 @@ namespace API.Controllers
                 return BadRequest("Review data is required.");
             }
 
-            // Get the currently logged-in user's ID from the claims
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int reviewerId))
+            // Get the token from the Authorization header
+            var token = Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            if (string.IsNullOrEmpty(token))
             {
-                return Unauthorized("User ID is not available.");
+                return Unauthorized("Authorization token is missing.");
             }
 
-            var result = await _reviewBusiness.Save(reviewDto, reviewerId);
+            var result = await _reviewBusiness.Save(reviewDto, token);
+
             if (result.Success)
             {
                 return Ok(result);
             }
+
             return StatusCode(StatusCodes.Status500InternalServerError, result);
         }
 
@@ -85,15 +88,22 @@ namespace API.Controllers
                 return BadRequest("Review data is required.");
             }
 
-            try
+            // Get the token from the Authorization header
+            var token = Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            if (string.IsNullOrEmpty(token))
             {
-                var result = await _reviewBusiness.Update(reviewDto);
+                return Unauthorized("Authorization token is missing.");
+            }
+
+            var result = await _reviewBusiness.Update(reviewDto, token);
+
+            if (result.Success)
+            {
                 return Ok(result);
             }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
-            }
+          
+
+            return StatusCode(StatusCodes.Status500InternalServerError, result);
         }
 
         [HttpDelete("deleteReview/{id}")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {}
+    "D:\\BE_EXE\\BE\\Common\\Common.csproj": {}
   },
   "projects": {
-    "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
+    "D:\\BE_EXE\\BE\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\BE_EXE\\BE\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
+        "projectPath": "D:\\BE_EXE\\BE\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\BE_EXE201\\BE\\Common\\obj\\",
+        "outputPath": "D:\\BE_EXE\\BE\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

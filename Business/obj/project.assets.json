@@ -3273,11 +3273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
+      "projectUniqueName": "D:\\BE_EXE\\BE\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
+      "projectPath": "D:\\BE_EXE\\BE\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "D:\\BE_EXE201\\BE\\Business\\obj\\",
+      "outputPath": "D:\\BE_EXE\\BE\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3295,11 +3295,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
-              "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj"
+            "D:\\BE_EXE\\BE\\Common\\Common.csproj": {
+              "projectPath": "D:\\BE_EXE\\BE\\Common\\Common.csproj"
             },
-            "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj": {
-              "projectPath": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj"
+            "D:\\BE_EXE\\BE\\DATA\\DATA.csproj": {
+              "projectPath": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj"
             }
           }
         }
