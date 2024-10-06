@@ -56,7 +56,10 @@ namespace API.Controllers
                 return BadRequest("Post data is required.");
             }
 
-            var result = await _postBusiness.Save(postDto);
+            // Get the token from the Authorization header
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+            var result = await _postBusiness.Save(postDto, token);
             return Ok(result);
         }
 

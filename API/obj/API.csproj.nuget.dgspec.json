@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EXE201C\\BE\\API\\API.csproj": {}
+    "D:\\BE_EXE201\\BE\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\EXE201C\\BE\\API\\API.csproj": {
+    "D:\\BE_EXE201\\BE\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE201C\\BE\\API\\API.csproj",
+        "projectUniqueName": "D:\\BE_EXE201\\BE\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\EXE201C\\BE\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE201C\\BE\\API\\obj\\",
+        "projectPath": "D:\\BE_EXE201\\BE\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\BE_EXE201\\BE\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\NGOC MINH\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\EXE201C\\BE\\Business\\Business.csproj": {
-                "projectPath": "D:\\EXE201C\\BE\\Business\\Business.csproj"
+              "D:\\BE_EXE201\\BE\\Business\\Business.csproj": {
+                "projectPath": "D:\\BE_EXE201\\BE\\Business\\Business.csproj"
               }
             }
           }
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -48,10 +53,6 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.6, )"
-            },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-              "target": "Package",
-              "version": "[1.19.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -77,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EXE201C\\BE\\Business\\Business.csproj": {
+    "D:\\BE_EXE201\\BE\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE201C\\BE\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "D:\\EXE201C\\BE\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE201C\\BE\\Business\\obj\\",
+        "projectPath": "D:\\BE_EXE201\\BE\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\BE_EXE201\\BE\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,18 +100,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\NGOC MINH\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\EXE201C\\BE\\Common\\Common.csproj": {
-                "projectPath": "D:\\EXE201C\\BE\\Common\\Common.csproj"
+              "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
+                "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj"
               },
-              "D:\\EXE201C\\BE\\DATA\\DATA.csproj": {
-                "projectPath": "D:\\EXE201C\\BE\\DATA\\DATA.csproj"
+              "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj": {
+                "projectPath": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj"
               }
             }
           }
@@ -119,6 +120,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -150,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EXE201C\\BE\\Common\\Common.csproj": {
+    "D:\\BE_EXE201\\BE\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE201C\\BE\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\EXE201C\\BE\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE201C\\BE\\Common\\obj\\",
+        "projectPath": "D:\\BE_EXE201\\BE\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\BE_EXE201\\BE\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,7 +178,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\NGOC MINH\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -185,6 +191,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -206,21 +217,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EXE201C\\BE\\DATA\\DATA.csproj": {
+    "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EXE201C\\BE\\DATA\\DATA.csproj",
+        "projectUniqueName": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj",
         "projectName": "DATA",
-        "projectPath": "D:\\EXE201C\\BE\\DATA\\DATA.csproj",
-        "packagesPath": "C:\\Users\\NGOC MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\EXE201C\\BE\\DATA\\obj\\",
+        "projectPath": "D:\\BE_EXE201\\BE\\DATA\\DATA.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\BE_EXE201\\BE\\DATA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NGOC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -228,7 +239,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\NGOC MINH\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -241,6 +252,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -286,7 +302,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

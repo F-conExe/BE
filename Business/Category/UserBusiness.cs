@@ -8,6 +8,7 @@ using DATA.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Buffers.Text;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -28,17 +29,19 @@ namespace Business.Category
         Task<IBusinessResult> RefreshToken(string token);
 
         Task<IBusinessResult> SearchbyName(string name);
+
+        Task<IBusinessResult> GetCurrentUser(string token);
     }
 
-    public class UserBusiness : IUserBusiness
+    public class UserBusiness : BaseBusiness, IUserBusiness
     {
         private readonly UnitOfWork _unitOfWork;
-        private readonly IConfiguration _configuration;
 
-        public UserBusiness(IConfiguration configuration)
+
+        public UserBusiness(IConfiguration _configuration) : base(_configuration)
         {
             _unitOfWork ??= new UnitOfWork();
-            _configuration = configuration;
+            _configuration = _configuration;
         }
 
         public async Task<IBusinessResult> GetAll()
@@ -114,7 +117,7 @@ namespace Business.Category
             {
                 User existingUser = await _unitOfWork.UserRepository.GetByIdAsync(updateUserDTO.UserID);
 
-                if(existingUser != null)
+                if (existingUser != null)
                 {
                     existingUser.Username = updateUserDTO.Username ?? existingUser.Username;
                     existingUser.Email = updateUserDTO.Email ?? existingUser.Email;
@@ -125,7 +128,7 @@ namespace Business.Category
                     existingUser.UpdatedAt = DateTime.UtcNow;
 
                     int result = await _unitOfWork.UserRepository.UpdateAsync(existingUser);
-                    if(result > 0)
+                    if (result > 0)
                     {
                         return new BusinessResult(Const.SUCCESS_UPDATE_CODE, Const.SUCCESS_UPDATE_MSG);
                     }
@@ -144,7 +147,7 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
-       
+
 
         public async Task<IBusinessResult> DeleteById(int id)
         {
@@ -231,25 +234,25 @@ namespace Business.Category
 
 
         public async Task<IBusinessResult> Login(LoginUserDTO loginUserDTO)
-{
-    try
-    {
-        var user = await _unitOfWork.UserRepository.FindByUsernameAsync(loginUserDTO.Username);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(loginUserDTO.Password, user.PasswordHash))
         {
-            return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid username or password");
+            try
+            {
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(loginUserDTO.Username);
+                if (user == null || !BCrypt.Net.BCrypt.Verify(loginUserDTO.Password, user.PasswordHash))
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid username or password");
+                }
+
+                // Tạo JWT Token
+                var token = GenerateJwtToken(user);
+
+                return new BusinessResult(Const.SUCCESS_AUTHENTICATION_CODE, "Login successful", token);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+            }
         }
-
-        // Tạo JWT Token
-        var token = GenerateJwtToken(user);
-
-        return new BusinessResult(Const.SUCCESS_AUTHENTICATION_CODE, "Login successful", token);
-    }
-    catch (Exception ex)
-    {
-        return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
-    }
-}
 
         public async Task<IBusinessResult> RefreshToken(string token)
         {
@@ -313,8 +316,63 @@ namespace Business.Category
 
 
             }
-            catch (Exception ex) { 
-                return new BusinessResult(Const.ERROR_EXCEPTION,ex.Message);
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
+            }
+        }
+
+        public async Task<IBusinessResult> GetCurrentUser(string token)
+        {
+            try
+            {
+                var principal = GetPrincipalFromToken(token);
+                if (principal == null)
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
+                }
+
+                var username = principal.Identity.Name;
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+
+                if (user == null)
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+                }
+
+                // Không trả về mật khẩu hash
+                user.PasswordHash = null;
+
+                return new BusinessResult(Const.SUCCESS_READ_CODE, "Current user retrieved successfully", user);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+            }
+        }
+
+        private ClaimsPrincipal GetPrincipalFromToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true // Kiểm tra thời hạn token
+            };
+
+            try
+            {
+                var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken validatedToken);
+                return principal;
+            }
+            catch
+            {
+                return null; // Token không hợp lệ hoặc đã hết hạn
             }
         }
     }

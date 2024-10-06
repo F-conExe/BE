@@ -5,6 +5,7 @@ using Common;
 using DATA;
 using DATA.Models;
 using DATA.Repository;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Business.Category
     {
         Task<IBusinessResult> GetAll();
         Task<IBusinessResult> GetById(int id);
-        Task<IBusinessResult> Save(CreatePostDTO post);
+        Task<IBusinessResult> Save(CreatePostDTO post, string token);
         Task<IBusinessResult> Update(UpdatePostDTO post);
         Task<IBusinessResult> DeleteById(int id);
 
@@ -27,13 +28,14 @@ namespace Business.Category
 
     }
 
-    public class PostBusiness : IPostBusiness
+    public class PostBusiness : BaseBusiness , IPostBusiness
     {
         private readonly UnitOfWork _unitOfWork;
 
-        public PostBusiness()
+        public PostBusiness(IConfiguration configuration) : base(configuration)
         {
             _unitOfWork ??= new UnitOfWork();
+            configuration = configuration;
         }
 
         public async Task<IBusinessResult> DeleteById(int id)
@@ -108,10 +110,41 @@ namespace Business.Category
             return await _unitOfWork.PostRepo.GetPostCount();
         }
 
-        public async Task<IBusinessResult> Save(CreatePostDTO postdto)
+        public async Task<IBusinessResult> Save(CreatePostDTO postdto, string token)
         {
             try
             {
+                // Get the user ID from the token
+                var principal = GetPrincipalFromToken(token);
+                if (principal == null)
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
+                }
+
+                var username = principal.Identity.Name;
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+                if (user == null)
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+                }
+
+                // Validate if the user is a member
+                var membership = await _unitOfWork.MembershipRepo.GetByUserIdAsync(user.UserId);
+                if (membership == null)
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, "User is not a member");
+                }
+
+                // Check the membership status
+                var activeMemberships = membership.MembershipPlanAssignments
+                    .Where(mpa => mpa.Status == "Active" && (mpa.Plan.Name == "Premium" || mpa.Plan.Name == "Platinum"))
+                    .ToList();
+
+                if (!activeMemberships.Any())
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, "User does not have the required membership to create a post");
+                }
+
                 // Validate if the post type exists
                 var existType = await _unitOfWork.PostTypeRepository.GetByIdAsync(postdto.PostTypeId);
                 if (existType == null)
@@ -119,9 +152,10 @@ namespace Business.Category
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "Invalid Post Type ID");
                 }
 
+                // Create the post entity
                 var post = new Post
                 {
-                    UserId = postdto.UserId,
+                    UserId = user.UserId,
                     PostTypeId = postdto.PostTypeId,
                     Title = postdto.Title,
                     Description = postdto.Description,
@@ -132,6 +166,7 @@ namespace Business.Category
                     UpdatedAt = DateTime.UtcNow,
                 };
 
+                // Save the post
                 int result = await _unitOfWork.PostRepo.CreateAsync(post);
                 if (result > 0)
                 {
@@ -147,6 +182,8 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
+
 
 
         public async Task<IBusinessResult> Search(string skill, decimal? minSalary, decimal? maxSalary, int? postTypeId)
@@ -172,7 +209,7 @@ namespace Business.Category
         {
             try
             {
-                // Validate if the user exists
+               
                 var existUser = await _unitOfWork.UserRepository.GetByIdAsync(post.UserId);
                 if (existUser == null)
                 {
