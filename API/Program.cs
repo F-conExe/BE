@@ -101,11 +101,10 @@ var app = builder.Build();
 // Apply CORS configuration
 app.UseCors("AllowAllOrigins");
 
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 app.UseHttpsRedirection();
 

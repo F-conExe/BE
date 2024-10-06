@@ -1,0 +1,7 @@
+services:
+  server:
+    build: 
+     context: .
+     target : final
+    ports:
+      - 7979:8080
