@@ -1,0 +1,21 @@
+name: deploy-vps
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    
+jobs:
+  buildanddeploy:
+    runs-on: self-hosted
+    environment: docker
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build and deploy Docker containers
+        run: |
+          docker-compose -f docker-compose.yml up --build -d
