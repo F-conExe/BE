@@ -67,3 +67,15 @@ E:\EXE\Common\obj\Debug\net8.0\Common.dll
 E:\EXE\Common\obj\Debug\net8.0\refint\Common.dll
 E:\EXE\Common\obj\Debug\net8.0\Common.pdb
 E:\EXE\Common\obj\Debug\net8.0\ref\Common.dll
+D:\BE_EXE\BE\Common\bin\Debug\net8.0\Common.deps.json
+D:\BE_EXE\BE\Common\bin\Debug\net8.0\Common.dll
+D:\BE_EXE\BE\Common\bin\Debug\net8.0\Common.pdb
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.sourcelink.json
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.dll
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\refint\Common.dll
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\Common.pdb
+D:\BE_EXE\BE\Common\obj\Debug\net8.0\ref\Common.dll
