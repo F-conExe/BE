@@ -3,7 +3,5 @@ services:
     build: 
      context: .
      target : final
-    environment:
-      - ConnectionStrings__DefaultConnection="Data Source=103.179.184.83,1433;Initial Catalog=exe201c_v2;Persist Security Info=True;User ID=sa;Password=Tam@4545;Encrypt=False"
     ports:
       - 7979:8080
