@@ -1,5 +1,6 @@
 ﻿using Business.Base;
 using Business.DTO.Create;
+using Business.DTO.Get;
 using Business.DTO.Update;
 using Common;
 using DATA;
@@ -25,6 +26,8 @@ namespace Business.Category
         Task<IBusinessResult> Search(string skill, decimal? minSalary, decimal? maxSalary, int? postTypeId);
 
         Task<int> GetPostCount();
+
+        Task<IBusinessResult> GetPostsByType(string postTypeName);
 
     }
 
@@ -109,6 +112,64 @@ namespace Business.Category
         {
             return await _unitOfWork.PostRepo.GetPostCount();
         }
+
+        public async Task<IBusinessResult> GetPostsByType(string postTypeName)
+        {
+            try
+            {
+                // Only allow "Freelancer" and "Enterprise" post types
+                if (postTypeName != "Freelancer" && postTypeName != "Enterprise")
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid post type. Only 'Freelancer' and 'Enterprise' are allowed.");
+                }
+
+                // Retrieve the PostType entity by name
+                var postType = await _unitOfWork.PostTypeRepository.GetByNameAsync(postTypeName);
+                if (postType == null)
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "Invalid post type name");
+                }
+
+                // Get all posts with the specified PostTypeId
+                var posts = await _unitOfWork.PostRepo.GetPostsByTypeIdAsync(postType.TypeId);
+                if (posts == null || !posts.Any())
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
+                }
+
+                // Convert the Post entities to PostDTOs
+                var postDTOs = posts.Select(post => new PostDTO
+                {
+                    PostId = post.PostId,
+                    UserId = post.UserId,
+                    PostTypeId = post.PostTypeId,
+                    Title = post.Title,
+                    Description = post.Description,
+                    BudgetOrSalary = post.BudgetOrSalary,
+                    Skills = post.Skills,
+                    Status = post.Status,
+                    CreatedAt = post.CreatedAt,
+                    UpdatedAt = post.UpdatedAt,
+                    PostType = new PostTypeDTO
+                    {
+                        TypeId = post.PostType.TypeId,
+                        TypeName = post.PostType.TypeName,
+                        Description = post.PostType.Description,
+                        CreatedAt = post.PostType.CreatedAt,
+                        UpdatedAt = post.PostType.UpdatedAt
+                    }
+                }).ToList();
+
+                // Return a successful result with the mapped PostDTO list
+                return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, postDTOs);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
+            }
+        }
+
+
 
         public async Task<IBusinessResult> Save(CreatePostDTO postdto, string token)
         {
@@ -258,8 +319,10 @@ namespace Business.Category
             }
         }
 
+       
 
-        
 
-    }
+
+
+        }
 }
