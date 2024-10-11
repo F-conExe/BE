@@ -107,6 +107,16 @@
   },
   {
     "ContainingType": "API.Controllers.MembershipController",
+    "Method": "GetMembershipPlansByUser",
+    "RelativePath": "api/Membership/getMembershipPlansByUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.MembershipController",
     "Method": "UpdateMembership",
     "RelativePath": "api/Membership/UpdateMembership",
     "HttpMethod": "PUT",
@@ -525,6 +535,16 @@
     "ContainingType": "API.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User/getAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/User/getCurrentUser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

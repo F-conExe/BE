@@ -52,7 +52,8 @@ namespace API.Controllers
                 return BadRequest("Membership data is required.");
             }
 
-            var result = await _memberBusiness.Save(membershipDto);
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var result = await _memberBusiness.Save(membershipDto, token);
             return Ok(result);
         }
 
@@ -83,6 +84,27 @@ namespace API.Controllers
             catch (Exception ex)
             {
                 // Log the exception
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("getMembershipPlansByUser")]
+        public async Task<IActionResult> GetMembershipPlansByUser()
+        {
+            try
+            {
+                string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+                var result = await _memberBusiness.GetMembershipPlanByUser(token);
+
+                if (result == null || result.Data == null)
+                {
+                    return NotFound(new { message = "No membership plans found for this user." });
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }

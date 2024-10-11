@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
+/*using Microsoft.AspNetCore.Authentication.Google;*/
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddAuthentication(option =>
+/*builder.Services.AddAuthentication(option =>
 {
     option.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     option.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
@@ -16,7 +16,7 @@ builder.Services.AddAuthentication(option =>
         option.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
         option.ClientId = builder.Configuration["Google:ClientId"];
         option.ClientSecret = builder.Configuration["Google:ClientSecret"];
-    });
+    });*/
 
 var app = builder.Build();
 

@@ -1,9 +1,11 @@
 ﻿using Business.Base;
 using Business.DTO.Create;
+using Business.DTO.Get;
 using Business.DTO.Update;
 using Common;
 using DATA;
 using DATA.Models;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,18 +18,21 @@ namespace Business.Category
     {
         Task<IBusinessResult> GetAll();
         Task<IBusinessResult> GetById(int id);
-        Task<IBusinessResult> Save(CreateMembershipDTO membership);
+        Task<IBusinessResult> Save(CreateMembershipDTO membership, string token);
         Task<IBusinessResult> Update(UpdateMembershipDTO membership);
         Task<IBusinessResult> DeleteById(int id);
+
+        Task<IBusinessResult> GetMembershipPlanByUser(string token);
     }
 
-    public class MemberBusiness : IMemberBusiness
+    public class MemberBusiness : BaseBusiness, IMemberBusiness
     {
         private readonly UnitOfWork _unitOfWork;
 
-        public MemberBusiness()
+        public MemberBusiness(IConfiguration configuration) : base(configuration)
         {
             _unitOfWork ??= new UnitOfWork();
+            configuration = configuration;
         }
 
         public async Task<IBusinessResult> GetAll()
@@ -68,30 +73,49 @@ namespace Business.Category
             }
         }
 
-        public async Task<IBusinessResult> Save(CreateMembershipDTO membershipdto)
+        public async Task<IBusinessResult> Save(CreateMembershipDTO membershipdto, string token)
         {
             try
             {
-                var membership = new Membership
+                // Get the user ID from the token
+                var principal = GetPrincipalFromToken(token);
+                if (principal == null)
                 {
-                    UserId = membershipdto.UserId,
-                    Status = membershipdto.Status,
-                };
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
+                }
 
+                var username = principal.Identity.Name;
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+                if (user == null)
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+                }
+
+                // Validate if the membership plan exists
                 var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipdto.Planid);
                 if (membershipPlan == null)
                 {
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
                 }
 
+                // Create the membership entity
+                var membership = new Membership
+                {
+                    UserId = user.UserId,
+                    Status = membershipdto.Status
+                    
+                };
+
+                // Create the membership plan assignment entity
                 var membershipPlanAssignment = new MembershipPlanAssignment
                 {
                     Membership = membership,
                     PlanId = membershipdto.Planid,
-                    StartDate = DateOnly.FromDateTime(DateTime.Now),
+                    StartDate = DateOnly.FromDateTime(DateTime.UtcNow),
                     Status = "Active"
                 };
 
+                // Set the end date based on the plan type
                 if (membershipPlan.Name == "Premium")
                 {
                     membershipPlanAssignment.EndDate = membershipPlanAssignment.StartDate.AddMonths(6);
@@ -101,8 +125,10 @@ namespace Business.Category
                     membershipPlanAssignment.EndDate = membershipPlanAssignment.StartDate.AddYears(1);
                 }
 
+                // Add the plan assignment to the membership
                 membership.MembershipPlanAssignments.Add(membershipPlanAssignment);
 
+                // Save the membership and assignment
                 int result = await _unitOfWork.MembershipRepo.CreateAsync(membership);
                 if (result > 0)
                 {
@@ -118,6 +144,7 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
 
 
         public async Task<IBusinessResult> Update(UpdateMembershipDTO membership)
@@ -186,5 +213,72 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
+
+
+
+
+
+        public async Task<IBusinessResult> GetMembershipPlanByUser(string token)
+        {
+            try
+            {
+                var principal = GetPrincipalFromToken(token);
+                if (principal == null)
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token or user not found.");
+                }
+
+                var username = principal.Identity.Name;
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+                if (user == null)
+                {
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "User not found.");
+                }
+
+                var memberships = await _unitOfWork.MembershipRepo.GetAllByUserIdAsync(user.UserId);
+                if (memberships == null || !memberships.Any())
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User has no membership plans");
+                }
+
+                var membershipDTOs = memberships.Select(MapToDTO).ToList();
+                var userMembershipsDTO = new UserMembershipsDTO
+                {
+                    UserId = user.UserId,
+                    Memberships = membershipDTOs
+                };
+
+                return new BusinessResult(Const.SUCCESS_READ_CODE, "Membership plans retrieved successfully", userMembershipsDTO);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+            }
+        }
+
+        private MembershipDTO MapToDTO(Membership membership)
+        {
+            return new MembershipDTO
+            {
+                MembershipId = membership.MembershipId,
+                UserId = membership.UserId,
+                Status = membership.Status,
+                MembershipPlanAssignments = membership.MembershipPlanAssignments?
+                    .Select(mpa => new MembershipPlanAssignmentDTO
+                    {
+                        PlanAssignmentId = mpa.AssignmentId,
+                        PlanId = (int)mpa.PlanId,
+                        PlanName = mpa.Plan?.Name,
+                        StartDate = mpa.StartDate,
+                        EndDate = mpa.EndDate,
+                        Status = mpa.Status
+                    })
+                    .ToList() ?? new List<MembershipPlanAssignmentDTO>()
+            };
+        }
+
+
+
     }
 }

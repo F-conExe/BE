@@ -1,0 +1,470 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BE_EXE201\\BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0D1F7DC-A1F9-4BC1-A3F9-622A43B5F2FC}|GoogleAuth\\GoogleAuth.csproj|d:\\be_exe201\\be\\googleauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F0D1F7DC-A1F9-4BC1-A3F9-622A43B5F2FC}|GoogleAuth\\GoogleAuth.csproj|solutionrelative:googleauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0D1F7DC-A1F9-4BC1-A3F9-622A43B5F2FC}|GoogleAuth\\GoogleAuth.csproj|d:\\be_exe201\\be\\googleauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0D1F7DC-A1F9-4BC1-A3F9-622A43B5F2FC}|GoogleAuth\\GoogleAuth.csproj|solutionrelative:googleauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\dto\\get\\membershipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\get\\membershipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\membershipplanasmbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\membershipplanasmbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\repository\\membershiprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\membershiprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\membershipplanassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\membershipplanassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\basebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\basebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\membershipplanasmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\membershipplanasmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\membershipplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\membershipplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\repository\\membershipplanasmrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\membershipplanasmrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\membershipplanbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\membershipplanbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe201\\be\\business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe201\\be\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\repository\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\repository\\posttyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\posttyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\posttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\posttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe201\\be\\data\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 2,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\GoogleAuth\\Program.cs",
+              "RelativeDocumentMoniker": "GoogleAuth\\Program.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\GoogleAuth\\Program.cs",
+              "RelativeToolTip": "GoogleAuth\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T06:19:21.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\BaseBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\BaseBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\BaseBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\BaseBusiness.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowD8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:49:54.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MembershipPlanAsmBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\MembershipPlanAsmBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\MembershipPlanAsmBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\MembershipPlanAsmBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\MembershipPlanAsmBusiness.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:25:45.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemberBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\MemberBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\MemberBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\MemberBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\MemberBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8BAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:44:44.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MembershipPlanAsmController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipPlanAsmController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MembershipPlanAsmController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipPlanAsmController.cs",
+              "RelativeToolTip": "API\\Controllers\\MembershipPlanAsmController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:18:51.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MembershipController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MembershipController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipController.cs",
+              "RelativeToolTip": "API\\Controllers\\MembershipController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwG0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:09:37.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MembershipRepo.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Repository\\MembershipRepo.cs",
+              "RelativeDocumentMoniker": "DATA\\Repository\\MembershipRepo.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Repository\\MembershipRepo.cs",
+              "RelativeToolTip": "DATA\\Repository\\MembershipRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:08:32.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\GoogleAuth\\appsettings.json",
+              "RelativeDocumentMoniker": "GoogleAuth\\appsettings.json",
+              "ToolTip": "D:\\BE_EXE201\\BE\\GoogleAuth\\appsettings.json",
+              "RelativeToolTip": "GoogleAuth\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T12:30:12.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MembershipDTO.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\DTO\\Get\\MembershipDTO.cs",
+              "RelativeDocumentMoniker": "Business\\DTO\\Get\\MembershipDTO.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\DTO\\Get\\MembershipDTO.cs",
+              "RelativeToolTip": "Business\\DTO\\Get\\MembershipDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T03:30:34.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T03:20:06.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MembershipPlanAssignment.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\MembershipPlanAssignment.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\MembershipPlanAssignment.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\MembershipPlanAssignment.cs",
+              "RelativeToolTip": "DATA\\Models\\MembershipPlanAssignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T03:32:54.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\UserBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\UserBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\UserBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\UserBusiness.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:06:56.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Membership.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\Membership.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\Membership.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\Membership.cs",
+              "RelativeToolTip": "DATA\\Models\\Membership.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:11:42.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Repository\\UserRepo.cs",
+              "RelativeDocumentMoniker": "DATA\\Repository\\UserRepo.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Repository\\UserRepo.cs",
+              "RelativeToolTip": "DATA\\Repository\\UserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:15:22.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MembershipPlanBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\MembershipPlanBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\MembershipPlanBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\MembershipPlanBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\MembershipPlanBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:22:57.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MembershipPlanController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipPlanController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MembershipPlanController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\MembershipPlanController.cs",
+              "RelativeToolTip": "API\\Controllers\\MembershipPlanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T02:53:55.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MembershipPlanAsmRepo.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Repository\\MembershipPlanAsmRepo.cs",
+              "RelativeDocumentMoniker": "DATA\\Repository\\MembershipPlanAsmRepo.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Repository\\MembershipPlanAsmRepo.cs",
+              "RelativeToolTip": "DATA\\Repository\\MembershipPlanAsmRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:21:06.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\PaymentService.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\PaymentService.cs",
+              "RelativeToolTip": "Business\\Category\\PaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:11:49.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\PostController.cs",
+              "RelativeToolTip": "API\\Controllers\\PostController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwDsAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:29:32.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PostBusiness.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\Business\\Category\\PostBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\PostBusiness.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\Business\\Category\\PostBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\PostBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:06:55.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MembershipPlan.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\MembershipPlan.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\MembershipPlan.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\MembershipPlan.cs",
+              "RelativeToolTip": "DATA\\Models\\MembershipPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:11:43.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\User.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\User.cs",
+              "RelativeToolTip": "DATA\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:38:53.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PostRepo.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Repository\\PostRepo.cs",
+              "RelativeDocumentMoniker": "DATA\\Repository\\PostRepo.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Repository\\PostRepo.cs",
+              "RelativeToolTip": "DATA\\Repository\\PostRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:15:21.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:37:43.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAQwKoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:10:15.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\Post.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\Post.cs",
+              "RelativeToolTip": "DATA\\Models\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:38:59.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PostType.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Models\\PostType.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\PostType.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Models\\PostType.cs",
+              "RelativeToolTip": "DATA\\Models\\PostType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:39:04.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PostTypeRepo.cs",
+              "DocumentMoniker": "D:\\BE_EXE201\\BE\\DATA\\Repository\\PostTypeRepo.cs",
+              "RelativeDocumentMoniker": "DATA\\Repository\\PostTypeRepo.cs",
+              "ToolTip": "D:\\BE_EXE201\\BE\\DATA\\Repository\\PostTypeRepo.cs",
+              "RelativeToolTip": "DATA\\Repository\\PostTypeRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T03:40:07.787Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
