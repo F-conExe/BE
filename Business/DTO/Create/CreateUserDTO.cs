@@ -22,5 +22,15 @@ namespace Business.DTO.Create
 
         public DateTime UpdatedAt { get; set; }
 
+        public int numberOfJobDonne {  get; set; }
+
+        public string Location { get; set; }
+
+        public string DeliveryTime { get; set; }
+
+        public string LanguageLevel { get; set; }
+
+        public string ImgUrl { get; set; }
+
     }
 }

@@ -21,6 +21,8 @@ public partial class Review
 
     public DateTime? CreatedAt { get; set; }
 
+    public string ImgUrl { get; set; }
+
     public virtual Post Post { get; set; }
 
     public virtual User Reviewee { get; set; }

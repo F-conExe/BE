@@ -242,7 +242,21 @@ namespace Business.Category
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User has no membership plans");
                 }
 
-                var membershipDTOs = memberships.Select(MapToDTO).ToList();
+                var membershipDTOs = memberships.Select(membership =>
+                {
+                    // Update the status if the plan's end date is past or null
+                    foreach (var mpa in membership.MembershipPlanAssignments)
+                    {
+                        if (mpa.EndDate == null || mpa.EndDate < DateOnly.FromDateTime(DateTime.UtcNow))
+                        {
+                            mpa.Status = "Not Active";
+                        }
+                    }
+
+                    // Map the updated membership to DTO
+                    return MapToDTO(membership);
+                }).ToList();
+
                 var userMembershipsDTO = new UserMembershipsDTO
                 {
                     UserId = user.UserId,
@@ -256,6 +270,7 @@ namespace Business.Category
                 return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
 
         private MembershipDTO MapToDTO(Membership membership)
         {

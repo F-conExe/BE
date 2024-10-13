@@ -27,6 +27,8 @@ public partial class Post
 
     public DateTime? UpdatedAt { get; set; }
 
+    public string ImgUrl { get; set; }
+
     public virtual PostType PostType { get; set; }
 
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();

@@ -38,11 +38,11 @@ namespace API.Controllers
         }
 
         [HttpGet("getUserById/{id}")]
-        public async Task<IActionResult> GetUserById(int id)
+        public async Task<IActionResult> GetUserById(string token)
         {
             try
             {
-                var result = await _userBusiness.GetById(id);
+                var result = await _userBusiness.GetById(token);
                 if (result == null)
                 {
                     return NotFound(new { message = "User not found" });

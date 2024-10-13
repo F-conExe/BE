@@ -20,7 +20,7 @@ namespace Business.Category
     public interface IUserBusiness
     {
         Task<IBusinessResult> GetAll();
-        Task<IBusinessResult> GetById(int id);
+        Task<IBusinessResult> GetById(string token);
         Task<IBusinessResult> Save(CreateUserDTO user);
         Task<IBusinessResult> Update(UpdateUserDTO user);
         Task<IBusinessResult> DeleteById(int id);
@@ -63,24 +63,46 @@ namespace Business.Category
             }
         }
 
-        public async Task<IBusinessResult> GetById(int id)
+        public async Task<IBusinessResult> GetById(string token)
         {
             try
             {
-                var user = await _unitOfWork.UserRepository.GetByIdAsync(id);
+                // Lấy thông tin người dùng hiện tại từ token
+                var currentUserResult = await GetCurrentUser(token);
 
-                if (user == null)
+                // Kiểm tra xem có lỗi không
+                if (currentUserResult == null || currentUserResult.Data == null)
                 {
-                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
+                    return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token or user not found");
                 }
 
-                return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, user);
+                // Lấy thông tin người dùng từ kết quả
+                var currentUser = currentUserResult.Data as User;
+
+                // Kiểm tra nếu currentUser không phải null và sử dụng UserId
+                if (currentUser != null)
+                {
+                    var userId = currentUser.UserId; // Giả sử UserID là thuộc tính của User
+
+                    var user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
+
+                    if (user == null)
+                    {
+                        return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
+                    }
+
+                    return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, user);
+                }
+
+                return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found in token");
             }
             catch (Exception ex)
             {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
             }
         }
+
+
 
         public async Task<IBusinessResult> Save(CreateUserDTO userDTO)
         {
@@ -94,7 +116,12 @@ namespace Business.Category
                     UserType = userDTO.UserType,
                     ContactInfo = userDTO.ContactInfo,
                     CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
+                    UpdatedAt = DateTime.UtcNow,
+                    NumberJobDone = userDTO.numberOfJobDonne,
+                    Location = userDTO.Location,
+                    DeliveryTime = userDTO.DeliveryTime,
+                    LanguageLevel = userDTO.LanguageLevel,
+                    ImgUrl = userDTO.ImgUrl
                 };
 
                 int result = await _unitOfWork.UserRepository.CreateAsync(user);
@@ -126,6 +153,11 @@ namespace Business.Category
                     existingUser.UserType = updateUserDTO.UserType ?? existingUser.UserType;
                     existingUser.CreatedAt = updateUserDTO.CreatedAt;
                     existingUser.UpdatedAt = DateTime.UtcNow;
+                    existingUser.NumberJobDone = updateUserDTO.numberOfJobDonne;
+                    existingUser.Location = updateUserDTO.Location ?? existingUser.Location;
+                    existingUser.DeliveryTime = updateUserDTO.DeliveryTime;
+                    existingUser.LanguageLevel = updateUserDTO.LanguageLevel;
+                    existingUser.ImgUrl = updateUserDTO?.ImgUrl ?? existingUser.ImgUrl;
 
                     int result = await _unitOfWork.UserRepository.UpdateAsync(existingUser);
                     if (result > 0)
@@ -192,7 +224,11 @@ namespace Business.Category
                     UserType = userDTO.UserType,
                     ContactInfo = userDTO.ContactInfo,
                     CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
+                    UpdatedAt = DateTime.UtcNow,
+                    Location = userDTO.Location,
+                    DeliveryTime = userDTO.DeliveryTime,
+                    LanguageLevel = userDTO.LanguageLevel,
+                    ImgUrl = userDTO.ImgUrl
                 };
 
                 int result = await _unitOfWork.UserRepository.CreateAsync(user);
