@@ -10,7 +10,7 @@ namespace DATA.Models;
 public partial class exe201cContext : DbContext
 {
     public exe201cContext(DbContextOptions<exe201cContext> options)
-        : base(options)
+       : base(options)
     {
     }
     public exe201cContext()
@@ -137,6 +137,9 @@ public partial class exe201cContext : DbContext
             entity.Property(e => e.Description)
                 .HasColumnType("text")
                 .HasColumnName("description");
+            entity.Property(e => e.ImgUrl)
+                .HasColumnType("text")
+                .HasColumnName("img_url");
             entity.Property(e => e.PostTypeId).HasColumnName("post_type_id");
             entity.Property(e => e.Skills)
                 .HasColumnType("text")
@@ -202,6 +205,9 @@ public partial class exe201cContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
+            entity.Property(e => e.ImgUrl)
+                .HasColumnType("text")
+                .HasColumnName("img_url");
             entity.Property(e => e.PostId).HasColumnName("post_id");
             entity.Property(e => e.Rating).HasColumnName("rating");
             entity.Property(e => e.RevieweeId).HasColumnName("reviewee_id");
@@ -237,11 +243,24 @@ public partial class exe201cContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
+            entity.Property(e => e.DeliveryTime)
+                .HasMaxLength(50)
+                .IsUnicode(false);
             entity.Property(e => e.Email)
                 .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("email");
+            entity.Property(e => e.ImgUrl)
+                .HasColumnType("text")
+                .HasColumnName("img_url");
+            entity.Property(e => e.LanguageLevel)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Location)
+                .HasMaxLength(250)
+                .IsUnicode(false);
+            entity.Property(e => e.NumberJobDone).HasColumnName("numberJobDone");
             entity.Property(e => e.PasswordHash)
                 .IsRequired()
                 .HasMaxLength(255)

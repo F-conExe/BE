@@ -23,6 +23,16 @@ public partial class User
 
     public DateTime? UpdatedAt { get; set; }
 
+    public int? NumberJobDone { get; set; }
+
+    public string Location { get; set; }
+
+    public string DeliveryTime { get; set; }
+
+    public string LanguageLevel { get; set; }
+
+    public string ImgUrl { get; set; }
+
     public virtual ICollection<Membership> Memberships { get; set; } = new List<Membership>();
 
     public virtual ICollection<Post> Posts { get; set; } = new List<Post>();

@@ -29,6 +29,11 @@ namespace DATA.Repository
             return await _context.Posts.CountAsync();
         }
 
+        public async Task<int> GetPostCountByUserIdAsync(int userId)
+        {
+            return await _context.Posts.CountAsync(p => p.UserId == userId);
+        }
+
         public async Task<IEnumerable<Post>> GetPostsByTypeAsync(string postTypeName)
         {
            

@@ -150,6 +150,7 @@ namespace Business.Category
                     Status = post.Status,
                     CreatedAt = post.CreatedAt,
                     UpdatedAt = post.UpdatedAt,
+                    ImgUrl = post.ImgUrl,
                     PostType = new PostTypeDTO
                     {
                         TypeId = post.PostType.TypeId,
@@ -196,15 +197,25 @@ namespace Business.Category
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "User is not a member");
                 }
 
-                // Check the membership status
-                var activeMemberships = membership.MembershipPlanAssignments
-                    .Where(mpa => mpa.Status == "Active" && (mpa.Plan.Name == "Premium" || mpa.Plan.Name == "Platinum"))
-                    .ToList();
+                // Check the membership status and plan
+                var activeMembership = membership.MembershipPlanAssignments
+                    .FirstOrDefault(mpa => mpa.Status == "Active" && (mpa.Plan.Name == "Premium" || mpa.Plan.Name == "Platinum"));
 
-                if (!activeMemberships.Any())
+                if (activeMembership == null)
                 {
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "User does not have the required membership to create a post");
                 }
+
+                // Check post limit for Premium members
+                if (activeMembership.Plan.Name == "Premium")
+                {
+                    var postCount = await _unitOfWork.PostRepo.GetPostCountByUserIdAsync(user.UserId);
+                    if (postCount >= 6)
+                    {
+                        return new BusinessResult(Const.FAIL_CREATE_CODE, "Premium members can only create up to 6 posts");
+                    }
+                }
+                
 
                 // Validate if the post type exists
                 var existType = await _unitOfWork.PostTypeRepository.GetByIdAsync(postdto.PostTypeId);
@@ -225,6 +236,7 @@ namespace Business.Category
                     Status = postdto.Status,
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,
+                    ImgUrl = postdto.ImgUrl
                 };
 
                 // Save the post
@@ -301,6 +313,7 @@ namespace Business.Category
                 existPost.BudgetOrSalary = post.BudgetOrSalary ?? existPost.BudgetOrSalary; // Nullable property
                 existPost.CreatedAt = post.CreatedAt; // Assuming CreatedAt should be set from DTO
                 existPost.UpdatedAt = DateTime.UtcNow; 
+                existPost.ImgUrl = post.ImgUrl ?? existPost.ImgUrl;
 
                 // Save the changes
                 int result = await _unitOfWork.PostRepo.UpdateAsync(existPost);

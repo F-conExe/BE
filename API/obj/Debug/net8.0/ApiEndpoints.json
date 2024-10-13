@@ -576,8 +576,13 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "",
         "IsRequired": true
       }
     ],

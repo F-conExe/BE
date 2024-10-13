@@ -18,6 +18,7 @@ namespace Business.DTO.Get
         public string Status { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+        public string ImgUrl { get; set; }
 
         public PostTypeDTO PostType { get; set; }
     }
