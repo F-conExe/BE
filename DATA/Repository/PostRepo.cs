@@ -29,6 +29,23 @@ namespace DATA.Repository
             return await _context.Posts.CountAsync();
         }
 
+        public async Task<IEnumerable<Post>> GetPostsByTypeAsync(string postTypeName)
+        {
+           
+            return await _context.Posts
+                .Include(p => p.PostType) // Assuming Post has a navigation property 'PostType'
+                .Where(p => p.PostType.TypeName.Equals(postTypeName)) // Match by post type name
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Post>> GetPostsByTypeIdAsync(int postTypeId)
+        {
+            // Query to fetch posts based on the PostTypeId
+            return await _context.Posts
+                .Where(p => p.PostTypeId == postTypeId)
+                .ToListAsync();
+        }
+
 
     }
 

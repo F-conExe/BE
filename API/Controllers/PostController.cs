@@ -126,6 +126,30 @@ namespace API.Controllers
             }
         }
 
+        [HttpGet("getPostsByType/{typeName}")]
+        public async Task<IActionResult> GetPostsByType(string typeName)
+        {
+            try
+            {
+                // Ensure only "Freelancer" and "Enterprise" types are allowed
+                if (typeName != "Freelancer" && typeName != "Enterprise")
+                {
+                    return BadRequest(new { message = "Invalid post type. Only 'Freelancer' and 'Enterprise' are allowed." });
+                }
+
+                var result = await _postBusiness.GetPostsByType(typeName);
+                if (result == null)
+                {
+                    return NotFound(new { message = "No posts found for the specified type" });
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
 
 
 

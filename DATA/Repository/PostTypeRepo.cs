@@ -1,5 +1,6 @@
 ﻿using DATA.Base;
 using DATA.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,10 @@ namespace DATA.Repository
         public PostTypeRepo() { }
 
         public PostTypeRepo(exe201cContext context) : base(context) => _context = context;
+
+        public async Task<PostType> GetByNameAsync(string name)
+        {
+            return await _context.PostTypes.FirstOrDefaultAsync(pt => pt.TypeName == name);
+        }
     }
 }
