@@ -17,11 +17,11 @@ namespace API.Controllers
         }
 
         [HttpPost("request-top-up-wallet-with-payos")]
-        public async Task<IActionResult> RequestTopUpWalletWithPayOs(string accountId, float amount)
+        public async Task<IActionResult> RequestTopUpWalletWithPayOs(string userId,decimal amount)
         {
             try
             {
-                var paymenturl = await _ipayOSService.RequestWithPayOsAsync(accountId, amount);
+                var paymenturl = await _ipayOSService.RequestWithPayOsAsync(userId, amount);
                 return Ok(paymenturl);
             }
             catch (Exception ex)
