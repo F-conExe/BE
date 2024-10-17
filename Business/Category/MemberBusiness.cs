@@ -9,7 +9,6 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Business.Category
@@ -21,18 +20,20 @@ namespace Business.Category
         Task<IBusinessResult> Save(CreateMembershipDTO membership, string token);
         Task<IBusinessResult> Update(UpdateMembershipDTO membership);
         Task<IBusinessResult> DeleteById(int id);
-
         Task<IBusinessResult> GetMembershipPlanByUser(string token);
+        Task<IBusinessResult> InitiateMembershipPayment(CreateMembershipDTO membershipDto, string token);
+        Task<IBusinessResult> HandleSuccessfulPayment(string userId, int planId);
     }
 
     public class MemberBusiness : BaseBusiness, IMemberBusiness
     {
         private readonly UnitOfWork _unitOfWork;
+        private readonly IPayOSService _payOSService;
 
-        public MemberBusiness(IConfiguration configuration) : base(configuration)
+        public MemberBusiness(IConfiguration configuration, IPayOSService payOSService) : base(configuration)
         {
-            _unitOfWork ??= new UnitOfWork();
-            configuration = configuration;
+            _unitOfWork = new UnitOfWork();
+            _payOSService = payOSService;
         }
 
         public async Task<IBusinessResult> GetAll()
@@ -40,7 +41,6 @@ namespace Business.Category
             try
             {
                 var memberships = await _unitOfWork.MembershipRepo.GetAllAsync();
-
                 if (memberships == null || !memberships.Any())
                 {
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
@@ -59,7 +59,6 @@ namespace Business.Category
             try
             {
                 var membership = await _unitOfWork.MembershipRepo.GetByIdAsync(id);
-
                 if (membership == null)
                 {
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
@@ -73,79 +72,42 @@ namespace Business.Category
             }
         }
 
-        public async Task<IBusinessResult> Save(CreateMembershipDTO membershipdto, string token)
+        public async Task<IBusinessResult> Save(CreateMembershipDTO membershipDto, string token)
         {
             try
             {
-                // Get the user ID from the token
                 var principal = GetPrincipalFromToken(token);
                 if (principal == null)
                 {
                     return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
                 }
 
-                var username = principal.Identity.Name;
-                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(principal.Identity.Name);
                 if (user == null)
                 {
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
                 }
 
-                // Validate if the membership plan exists
-                var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipdto.Planid);
+                var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipDto.Planid);
                 if (membershipPlan == null)
                 {
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
                 }
 
-                // Create the membership entity
-                var membership = new Membership
-                {
-                    UserId = user.UserId,
-                    Status = membershipdto.Status
-                    
-                };
-
-                // Create the membership plan assignment entity
-                var membershipPlanAssignment = new MembershipPlanAssignment
-                {
-                    Membership = membership,
-                    PlanId = membershipdto.Planid,
-                    StartDate = DateOnly.FromDateTime(DateTime.UtcNow),
-                    Status = "Active"
-                };
-
-                // Set the end date based on the plan type
-                if (membershipPlan.Name == "Premium")
-                {
-                    membershipPlanAssignment.EndDate = membershipPlanAssignment.StartDate.AddMonths(6);
-                }
-                else if (membershipPlan.Name == "Platinum")
-                {
-                    membershipPlanAssignment.EndDate = membershipPlanAssignment.StartDate.AddYears(1);
-                }
-
-                // Add the plan assignment to the membership
+                var membership = CreateMembership(user.UserId, membershipDto.Status);
+                var membershipPlanAssignment = CreateMembershipPlanAssignment(membership, membershipDto.Planid, membershipPlan.Name);
                 membership.MembershipPlanAssignments.Add(membershipPlanAssignment);
 
-                // Save the membership and assignment
                 int result = await _unitOfWork.MembershipRepo.CreateAsync(membership);
-                if (result > 0)
-                {
-                    return new BusinessResult(Const.SUCCESS_CREATE_CODE, Const.SUCCESS_CREATE_MSG);
-                }
-                else
-                {
-                    return new BusinessResult(Const.FAIL_CREATE_CODE, Const.FAIL_CREATE_MSG);
-                }
+                return result > 0
+                    ? new BusinessResult(Const.SUCCESS_CREATE_CODE, Const.SUCCESS_CREATE_MSG)
+                    : new BusinessResult(Const.FAIL_CREATE_CODE, Const.FAIL_CREATE_MSG);
             }
             catch (Exception ex)
             {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
-
-
 
         public async Task<IBusinessResult> Update(UpdateMembershipDTO membership)
         {
@@ -158,35 +120,28 @@ namespace Business.Category
                 }
 
                 var existUser = await _unitOfWork.UserRepository.GetByIdAsync(membership.UserId);
-                if (existMembership == null)
+                if (existUser == null)
                 {
                     return new BusinessResult(Const.FAIL_UPDATE_CODE, "User not found");
                 }
 
                 var existPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membership.PlanId);
-                if(existPlan == null)
+                if (existPlan == null)
                 {
                     return new BusinessResult(Const.FAIL_UPDATE_CODE, "Plan not found");
                 }
 
                 existMembership.UserId = membership.UserId;
-               
                 existMembership.Status = membership.Status;
-                
 
                 int result = await _unitOfWork.MembershipRepo.UpdateAsync(existMembership);
-                if (result > 0)
-                {
-                    return new BusinessResult(Const.SUCCESS_UPDATE_CODE, Const.SUCCESS_UPDATE_MSG);
-                }
-                else
-                {
-                    return new BusinessResult(Const.FAIL_UPDATE_CODE, Const.FAIL_UPDATE_MSG);
-                }
+                return result > 0
+                    ? new BusinessResult(Const.SUCCESS_UPDATE_CODE, Const.SUCCESS_UPDATE_MSG)
+                    : new BusinessResult(Const.FAIL_UPDATE_CODE, Const.FAIL_UPDATE_MSG);
             }
             catch (Exception ex)
             {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
 
@@ -198,26 +153,18 @@ namespace Business.Category
                 if (membership != null)
                 {
                     bool result = await _unitOfWork.MembershipRepo.RemoveAsync(membership);
-                    if (result)
-                    {
-                        return new BusinessResult(Const.SUCCESS_DELETE_CODE, Const.SUCCESS_DELETE_MSG);
-                    }
-
-                    return new BusinessResult(Const.FAIL_DELETE_CODE, Const.FAIL_DELETE_MSG);
+                    return result
+                        ? new BusinessResult(Const.SUCCESS_DELETE_CODE, Const.SUCCESS_DELETE_MSG)
+                        : new BusinessResult(Const.FAIL_DELETE_CODE, Const.FAIL_DELETE_MSG);
                 }
 
                 return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
             }
             catch (Exception ex)
             {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
-
-
-
-
-
 
         public async Task<IBusinessResult> GetMembershipPlanByUser(string token)
         {
@@ -229,8 +176,7 @@ namespace Business.Category
                     return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token or user not found.");
                 }
 
-                var username = principal.Identity.Name;
-                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(username);
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(principal.Identity.Name);
                 if (user == null)
                 {
                     return new BusinessResult(Const.FAIL_VALIDATION_CODE, "User not found.");
@@ -244,7 +190,6 @@ namespace Business.Category
 
                 var membershipDTOs = memberships.Select(membership =>
                 {
-                    // Update the status if the plan's end date is past or null
                     foreach (var mpa in membership.MembershipPlanAssignments)
                     {
                         if (mpa.EndDate == null || mpa.EndDate < DateOnly.FromDateTime(DateTime.UtcNow))
@@ -252,8 +197,6 @@ namespace Business.Category
                             mpa.Status = "Not Active";
                         }
                     }
-
-                    // Map the updated membership to DTO
                     return MapToDTO(membership);
                 }).ToList();
 
@@ -267,10 +210,81 @@ namespace Business.Category
             }
             catch (Exception ex)
             {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.ToString());
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
 
+        public async Task<IBusinessResult> InitiateMembershipPayment(CreateMembershipDTO membershipDto, string token)
+        {
+            try
+            {
+                var principal = GetPrincipalFromToken(token);
+                if (principal == null) return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
+
+                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(principal.Identity.Name);
+                if (user == null) return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+
+                var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipDto.Planid);
+                if (membershipPlan == null) return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
+
+                var paymentResult = await _payOSService.RequestWithPayOsAsync(user.UserId.ToString(), membershipPlan.Price);
+                if (paymentResult.Status != 201) return new BusinessResult(Const.FAIL_CREATE_CODE, "Failed to create payment URL");
+
+                // Store the pending membership information in a temporary storage or cache (implementation needed)
+
+                return paymentResult;
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
+            }
+        }
+
+        public async Task<IBusinessResult> HandleSuccessfulPayment(string userId, int planId)
+        {
+            try
+            {
+                var user = await _unitOfWork.UserRepository.GetByIdAsync(int.Parse(userId));
+                if (user == null) return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+
+                var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(planId);
+                var membership = CreateMembership(user.UserId, "Active");
+                var membershipPlanAssignment = CreateMembershipPlanAssignment(membership, planId, membershipPlan.Name);
+                membership.MembershipPlanAssignments.Add(membershipPlanAssignment);
+
+                int result = await _unitOfWork.MembershipRepo.CreateAsync(membership);
+                return result > 0
+                    ? new BusinessResult(Const.SUCCESS_CREATE_CODE, Const.SUCCESS_CREATE_MSG)
+                    : new BusinessResult(Const.FAIL_CREATE_CODE, Const.FAIL_CREATE_MSG);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
+            }
+        }
+
+        private Membership CreateMembership(int userId, string status) =>
+            new Membership { UserId = userId, Status = status };
+
+        private MembershipPlanAssignment CreateMembershipPlanAssignment(Membership membership, int planId, string planName)
+        {
+            var assignment = new MembershipPlanAssignment
+            {
+                Membership = membership,
+                PlanId = planId,
+                StartDate = DateOnly.FromDateTime(DateTime.UtcNow),
+                Status = "Active"
+            };
+
+            assignment.EndDate = planName switch
+            {
+                "Premium" => assignment.StartDate.AddMonths(6),
+                "Platinum" => assignment.StartDate.AddYears(1),
+                _ => assignment.EndDate
+            };
+
+            return assignment;
+        }
 
         private MembershipDTO MapToDTO(Membership membership)
         {
@@ -292,8 +306,5 @@ namespace Business.Category
                     .ToList() ?? new List<MembershipPlanAssignmentDTO>()
             };
         }
-
-
-
     }
 }

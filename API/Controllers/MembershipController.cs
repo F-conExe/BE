@@ -1,8 +1,10 @@
 ﻿using Business.Category;
 using Business.DTO.Create;
 using Business.DTO.Update;
+using Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace API.Controllers
@@ -28,7 +30,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
+                // Log the exception here (using a logging library or your preferred method)
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
@@ -36,12 +38,20 @@ namespace API.Controllers
         [HttpGet("getById/{id}")]
         public async Task<IActionResult> GetMembershipById(int id)
         {
-            var result = await _memberBusiness.GetById(id);
-            if (result == null)
+            try
             {
-                return NotFound(new { message = "Membership not found" });
+                var result = await _memberBusiness.GetById(id);
+                if (result == null)
+                {
+                    return NotFound(new { message = "Membership not found" });
+                }
+                return Ok(result);
             }
-            return Ok(result);
+            catch (Exception ex)
+            {
+                // Log the exception here
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
         }
 
         [HttpPost("AddNewMembership")]
@@ -52,9 +62,17 @@ namespace API.Controllers
                 return BadRequest("Membership data is required.");
             }
 
-            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            var result = await _memberBusiness.Save(membershipDto, token);
-            return Ok(result);
+            try
+            {
+                string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+                var result = await _memberBusiness.Save(membershipDto, token);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception here
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
         }
 
         [HttpPut("UpdateMembership")]
@@ -65,8 +83,20 @@ namespace API.Controllers
                 return BadRequest("Membership data is required.");
             }
 
-            var result = await _memberBusiness.Update(membershipDto);
-            return Ok(result);
+            try
+            {
+                var result = await _memberBusiness.Update(membershipDto);
+                if (result == null)
+                {
+                    return NotFound(new { message = "Membership not found" });
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception here
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
         }
 
         [HttpDelete("deleteMembership/{id}")]
@@ -83,7 +113,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
+                // Log the exception here
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
@@ -105,8 +135,31 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
+                // Log the exception here
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
+
+        [HttpPost("InitiateMembership")]
+        public async Task<IActionResult> InitiateMembership([FromBody] CreateMembershipDTO membershipDto)
+        {
+            if (membershipDto == null)
+            {
+                return BadRequest("Membership data is required.");
+            }
+
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var result = await _memberBusiness.InitiateMembershipPayment(membershipDto, token);
+
+            // Check if the result contains a payment link
+            if (result.Status == Const.FAIL_CREATE_CODE || result.Status == Const.WARNING_NO_DATA_CODE)
+            {
+                return BadRequest(result.Message); // Return error message
+            }
+
+            // Assuming paymentResult contains the URL in its Data property
+            return Ok(new { paymentUrl = result.Data }); // Return the payment URL
+        }
+
     }
 }

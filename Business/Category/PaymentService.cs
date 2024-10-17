@@ -11,7 +11,7 @@ namespace Business.Category
 {
     public interface IPayOSService
     {
-        Task<IBusinessResult> RequestWithPayOsAsync(string accountId, float amount);
+        Task<IBusinessResult> RequestWithPayOsAsync(string accountId, decimal amount);
     }
     public class PaymentService : IPayOSService
     {
@@ -22,7 +22,7 @@ namespace Business.Category
             _payOSService = payOSService;
         }
 
-        async Task<IBusinessResult> IPayOSService.RequestWithPayOsAsync(string accountId, float amount)
+        async Task<IBusinessResult> IPayOSService.RequestWithPayOsAsync(string userId, decimal amount)
         {
             var items = new List<ItemData>
             {
