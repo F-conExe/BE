@@ -39,8 +39,8 @@ namespace Business.Category
                 amount: (int)amount,
                 description: "Thanh toan don hang",
                 items: items,
-                returnUrl: "https://www.facebook.com/",
-                cancelUrl: "https://www.youtube.com/results?search_query=payos+c%23+api"
+                returnUrl: "https://f-con.id.vn/membership
+                cancelUrl: "https://f-con.id.vn/membership"
             );
 
 
