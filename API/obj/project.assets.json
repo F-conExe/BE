@@ -3428,11 +3428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BE_EXE\\BE\\API\\API.csproj",
+      "projectUniqueName": "D:\\FconBE\\BE\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\BE_EXE\\BE\\API\\API.csproj",
+      "projectPath": "D:\\FconBE\\BE\\API\\API.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "D:\\BE_EXE\\BE\\API\\obj\\",
+      "outputPath": "D:\\FconBE\\BE\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3450,8 +3450,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\BE_EXE\\BE\\Business\\Business.csproj": {
-              "projectPath": "D:\\BE_EXE\\BE\\Business\\Business.csproj"
+            "D:\\FconBE\\BE\\Business\\Business.csproj": {
+              "projectPath": "D:\\FconBE\\BE\\Business\\Business.csproj"
             }
           }
         }

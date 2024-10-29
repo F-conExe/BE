@@ -117,22 +117,6 @@
   },
   {
     "ContainingType": "API.Controllers.MembershipController",
-    "Method": "InitiateMembership",
-    "RelativePath": "api/Membership/InitiateMembership",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "membershipDto",
-        "Type": "Business.DTO.Create.CreateMembershipDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.MembershipController",
     "Method": "UpdateMembership",
     "RelativePath": "api/Membership/UpdateMembership",
     "HttpMethod": "PUT",

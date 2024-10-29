@@ -140,7 +140,7 @@ namespace API.Controllers
             }
         }
 
-        [HttpPost("InitiateMembership")]
+       /* [HttpPost("InitiateMembership")]
         public async Task<IActionResult> InitiateMembership([FromBody] CreateMembershipDTO membershipDto)
         {
             if (membershipDto == null)
@@ -159,7 +159,7 @@ namespace API.Controllers
 
             // Assuming paymentResult contains the URL in its Data property
             return Ok(new { paymentUrl = result.Data }); // Return the payment URL
-        }
+        }*/
 
     }
 }

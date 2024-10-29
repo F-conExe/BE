@@ -4415,11 +4415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj",
+      "projectUniqueName": "D:\\FconBE\\BE\\DATA\\DATA.csproj",
       "projectName": "DATA",
-      "projectPath": "D:\\BE_EXE\\BE\\DATA\\DATA.csproj",
+      "projectPath": "D:\\FconBE\\BE\\DATA\\DATA.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "D:\\BE_EXE\\BE\\DATA\\obj\\",
+      "outputPath": "D:\\FconBE\\BE\\DATA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

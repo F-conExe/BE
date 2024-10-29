@@ -21,7 +21,6 @@ namespace Business.Category
         Task<IBusinessResult> Update(UpdateMembershipDTO membership);
         Task<IBusinessResult> DeleteById(int id);
         Task<IBusinessResult> GetMembershipPlanByUser(string token);
-        Task<IBusinessResult> InitiateMembershipPayment(CreateMembershipDTO membershipDto, string token);
         Task<IBusinessResult> HandleSuccessfulPayment(string userId, int planId);
     }
 
@@ -88,20 +87,40 @@ namespace Business.Category
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
                 }
 
+                user.UserType = "freelancer";
+                await _unitOfWork.UserRepository.UpdateAsync(user);
+
                 var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipDto.Planid);
                 if (membershipPlan == null)
                 {
                     return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
                 }
 
-                var membership = CreateMembership(user.UserId, membershipDto.Status);
+                // Initiate payment process
+                var paymentResult = await _payOSService.RequestWithPayOsAsync(user.UserId.ToString(), membershipPlan.Price);
+                if (paymentResult.Status != 201)
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, "Failed to create payment URL");
+                }
+
+                // If payment is successful, create membership
+                var membership = CreateMembership(user.UserId, "Active");
                 var membershipPlanAssignment = CreateMembershipPlanAssignment(membership, membershipDto.Planid, membershipPlan.Name);
                 membership.MembershipPlanAssignments.Add(membershipPlanAssignment);
 
                 int result = await _unitOfWork.MembershipRepo.CreateAsync(membership);
-                return result > 0
-                    ? new BusinessResult(Const.SUCCESS_CREATE_CODE, Const.SUCCESS_CREATE_MSG)
-                    : new BusinessResult(Const.FAIL_CREATE_CODE, Const.FAIL_CREATE_MSG);
+                if (result <= 0)
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, Const.FAIL_CREATE_MSG);
+                }
+
+                // Return both the payment URL and the success message
+                return new BusinessResult
+                {
+                    Status = Const.SUCCESS_CREATE_CODE,
+                    Message = Const.SUCCESS_CREATE_MSG,
+                    Data = paymentResult.Data  // This will contain the payment URL
+                };
             }
             catch (Exception ex)
             {
@@ -214,40 +233,22 @@ namespace Business.Category
             }
         }
 
-        public async Task<IBusinessResult> InitiateMembershipPayment(CreateMembershipDTO membershipDto, string token)
-        {
-            try
-            {
-                var principal = GetPrincipalFromToken(token);
-                if (principal == null) return new BusinessResult(Const.FAIL_VALIDATION_CODE, "Invalid token");
-
-                var user = await _unitOfWork.UserRepository.FindByUsernameAsync(principal.Identity.Name);
-                if (user == null) return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
-
-                var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipDto.Planid);
-                if (membershipPlan == null) return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
-
-                var paymentResult = await _payOSService.RequestWithPayOsAsync(user.UserId.ToString(), membershipPlan.Price);
-                if (paymentResult.Status != 201) return new BusinessResult(Const.FAIL_CREATE_CODE, "Failed to create payment URL");
-
-                // Store the pending membership information in a temporary storage or cache (implementation needed)
-
-                return paymentResult;
-            }
-            catch (Exception ex)
-            {
-                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
-            }
-        }
-
         public async Task<IBusinessResult> HandleSuccessfulPayment(string userId, int planId)
         {
             try
             {
                 var user = await _unitOfWork.UserRepository.GetByIdAsync(int.Parse(userId));
-                if (user == null) return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+                if (user == null)
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
+                }
 
                 var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(planId);
+                if (membershipPlan == null)
+                {
+                    return new BusinessResult(Const.FAIL_CREATE_CODE, "Membership plan not found");
+                }
+
                 var membership = CreateMembership(user.UserId, "Active");
                 var membershipPlanAssignment = CreateMembershipPlanAssignment(membership, planId, membershipPlan.Name);
                 membership.MembershipPlanAssignments.Add(membershipPlanAssignment);
