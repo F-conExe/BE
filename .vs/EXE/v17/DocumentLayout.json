@@ -1,86 +1,90 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\BE_EXE\\BE\\",
+  "WorkspaceRootPath": "D:\\FconBE\\BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe\\be\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe\\be\\api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\be_exe\\be\\api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\auth\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\auth\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\update\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\update\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\create\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\create\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\create\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\create\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\update\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\update\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\repository\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\update\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\update\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\create\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\create\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\create\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\create\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\update\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\update\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\repository\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\repository\\posttyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\repository\\posttyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\repository\\posttyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\dto\\create\\createmembershipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\create\\createmembershipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\create\\createmembershipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\base\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\base\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\base\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\models\\exe201ccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\models\\exe201ccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\exe201ccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\be_exe\\be\\business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\be_exe\\be\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,43 +94,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MembershipController.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\API\\Controllers\\MembershipController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\MembershipController.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\API\\Controllers\\MembershipController.cs",
-              "RelativeToolTip": "API\\Controllers\\MembershipController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:09:47.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\API\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\API\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "API\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:09:37.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PaymentService.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\Category\\PaymentService.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
               "RelativeDocumentMoniker": "Business\\Category\\PaymentService.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\Category\\PaymentService.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
               "RelativeToolTip": "Business\\Category\\PaymentService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T07:03:11.799Z",
               "EditorCaption": ""
@@ -135,35 +113,34 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\API\\appsettings.json",
+              "DocumentMoniker": "D:\\FconBE\\BE\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
-              "ToolTip": "D:\\BE_EXE\\BE\\API\\appsettings.json",
+              "ToolTip": "D:\\FconBE\\BE\\API\\appsettings.json",
               "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-13T11:29:19.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "PostDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Get\\PostDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Get\\PostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Get\\PostDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Get\\PostDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Get\\PostDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Get\\PostDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T07:02:57.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T07:02:57.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "PostTypeRepo.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Repository\\PostTypeRepo.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Repository\\PostTypeRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Repository\\PostTypeRepo.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Repository\\PostTypeRepo.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Repository\\PostTypeRepo.cs",
               "RelativeToolTip": "DATA\\Repository\\PostTypeRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -171,11 +148,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PostRepo.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Repository\\PostRepo.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Repository\\PostRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Repository\\PostRepo.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Repository\\PostRepo.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Repository\\PostRepo.cs",
               "RelativeToolTip": "DATA\\Repository\\PostRepo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -183,11 +160,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "PostBusiness.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\Category\\PostBusiness.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\PostBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Category\\PostBusiness.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\Category\\PostBusiness.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\PostBusiness.cs",
               "RelativeToolTip": "Business\\Category\\PostBusiness.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -197,34 +174,86 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MemberBusiness.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\Category\\MemberBusiness.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\MemberBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Category\\MemberBusiness.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\Category\\MemberBusiness.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\MemberBusiness.cs",
               "RelativeToolTip": "Business\\Category\\MemberBusiness.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA8wOMAAAB7AAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAswCcBAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T06:57:56.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Post.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Models\\Post.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\Post.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\Post.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Models\\Post.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Models\\Post.cs",
               "RelativeToolTip": "DATA\\Models\\Post.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB0AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T07:03:03.689Z"
+              "WhenOpened": "2024-10-11T07:03:03.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DATA\\Models\\User.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Models\\User.cs",
+              "RelativeToolTip": "DATA\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:39:10.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MembershipController.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\MembershipController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MembershipController.cs",
+              "ToolTip": "D:\\FconBE\\BE\\API\\Controllers\\MembershipController.cs",
+              "RelativeToolTip": "API\\Controllers\\MembershipController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA3wKEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:09:47.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\FconBE\\BE\\API\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "API\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:09:37.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginUserDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Auth\\LoginUserDTO.cs",
+              "RelativeDocumentMoniker": "Business\\DTO\\Auth\\LoginUserDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Auth\\LoginUserDTO.cs",
+              "RelativeToolTip": "Business\\DTO\\Auth\\LoginUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T03:22:41.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UpdatePostDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Update\\UpdatePostDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdatePostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Update\\UpdatePostDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Update\\UpdatePostDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdatePostDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Update\\UpdatePostDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,11 +261,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "CreateMembershipDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreateMembershipDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateMembershipDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreateMembershipDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreateMembershipDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateMembershipDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Create\\CreateMembershipDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -244,11 +273,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GenericRepo.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Base\\GenericRepo.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Base\\GenericRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Base\\GenericRepo.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Base\\GenericRepo.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Base\\GenericRepo.cs",
               "RelativeToolTip": "DATA\\Base\\GenericRepo.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAA9wDsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,11 +285,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CreateUserDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreateUserDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateUserDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreateUserDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreateUserDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateUserDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Create\\CreateUserDTO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -268,11 +297,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "CreatePostDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreatePostDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreatePostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreatePostDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Create\\CreatePostDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreatePostDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Create\\CreatePostDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,11 +309,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UpdateUserDTO.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\DTO\\Update\\UpdateUserDTO.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdateUserDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Update\\UpdateUserDTO.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\DTO\\Update\\UpdateUserDTO.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdateUserDTO.cs",
               "RelativeToolTip": "Business\\DTO\\Update\\UpdateUserDTO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,11 +321,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Review.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Models\\Review.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\Review.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\Review.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Models\\Review.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Models\\Review.cs",
               "RelativeToolTip": "DATA\\Models\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,22 +334,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DATA\\Models\\User.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Models\\User.cs",
-              "RelativeToolTip": "DATA\\Models\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T06:39:10.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "UserBusiness.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\Business\\Category\\UserBusiness.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Category\\UserBusiness.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\Business\\Category\\UserBusiness.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
               "RelativeToolTip": "Business\\Category\\UserBusiness.cs",
               "ViewState": "AgIAACwAAAAAAAAAAADwv3sAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,11 +345,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "exe201cContext.cs",
-              "DocumentMoniker": "D:\\BE_EXE\\BE\\DATA\\Models\\exe201cContext.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\exe201cContext.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\exe201cContext.cs",
-              "ToolTip": "D:\\BE_EXE\\BE\\DATA\\Models\\exe201cContext.cs",
+              "ToolTip": "D:\\FconBE\\BE\\DATA\\Models\\exe201cContext.cs",
               "RelativeToolTip": "DATA\\Models\\exe201cContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
