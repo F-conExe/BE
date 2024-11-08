@@ -87,7 +87,7 @@ namespace Business.Category
                     return new BusinessResult(Const.WARNING_NO_DATA_CODE, "User not found");
                 }
 
-                user.UserType = "freelancer";
+               
                 await _unitOfWork.UserRepository.UpdateAsync(user);
 
                 var membershipPlan = await _unitOfWork.MemberShipPlanRepo.GetByIdAsync(membershipDto.Planid);
