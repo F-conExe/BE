@@ -11,6 +11,22 @@
       "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|d:\\fconbe\\be\\api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58B80C92-D14F-4BA0-812E-929CF67C5D95}|API\\API.csproj|solutionrelative:api\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\dto\\get\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\postbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\dto\\update\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\exe201ccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|d:\\fconbe\\be\\business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A60031BB-EF60-4491-B25D-FF4D8A720F41}|Business\\Business.csproj|solutionrelative:business\\category\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|d:\\fconbe\\be\\data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2133F2-1B7D-4CD7-BCC9-2CE710EEEF98}|DATA\\DATA.csproj|solutionrelative:data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -94,19 +102,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
-              "RelativeDocumentMoniker": "Business\\Category\\PaymentService.cs",
-              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
-              "RelativeToolTip": "Business\\Category\\PaymentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\FconBE\\BE\\API\\Controllers\\PostController.cs",
+              "RelativeToolTip": "API\\Controllers\\PostController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADgv4IAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:03:11.799Z",
+              "WhenOpened": "2024-11-08T15:31:14.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\FconBE\\BE\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:04:03.328Z",
               "EditorCaption": ""
             },
             {
@@ -117,14 +138,14 @@
               "RelativeDocumentMoniker": "API\\appsettings.json",
               "ToolTip": "D:\\FconBE\\BE\\API\\appsettings.json",
               "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-13T11:29:19.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "PostDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Get\\PostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Get\\PostDTO.cs",
@@ -136,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "PostTypeRepo.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Repository\\PostTypeRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Repository\\PostTypeRepo.cs",
@@ -148,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "PostRepo.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Repository\\PostRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Repository\\PostRepo.cs",
@@ -160,15 +181,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "PostBusiness.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\PostBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Category\\PostBusiness.cs",
               "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\PostBusiness.cs",
               "RelativeToolTip": "Business\\Category\\PostBusiness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsBAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAAAMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:01:04.553Z"
+              "WhenOpened": "2024-10-09T07:01:04.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -178,14 +200,14 @@
               "RelativeDocumentMoniker": "Business\\Category\\MemberBusiness.cs",
               "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\MemberBusiness.cs",
               "RelativeToolTip": "Business\\Category\\MemberBusiness.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAswCcBAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAqwGAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T06:57:56.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Post.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\Post.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\Post.cs",
@@ -193,12 +215,11 @@
               "RelativeToolTip": "DATA\\Models\\Post.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T07:03:03.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T07:03:03.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\User.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\User.cs",
@@ -206,12 +227,11 @@
               "RelativeToolTip": "DATA\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T06:39:10.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T06:39:10.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MembershipController.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\MembershipController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\MembershipController.cs",
@@ -219,12 +239,35 @@
               "RelativeToolTip": "API\\Controllers\\MembershipController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAA3wKEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:09:47.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T07:09:47.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserBusiness.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\UserBusiness.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
+              "RelativeToolTip": "Business\\Category\\UserBusiness.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAqwJEBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:11:56.813Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Business\\Category\\PaymentService.cs",
+              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\PaymentService.cs",
+              "RelativeToolTip": "Business\\Category\\PaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:03:11.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\API\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\PaymentController.cs",
@@ -236,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "LoginUserDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Auth\\LoginUserDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Auth\\LoginUserDTO.cs",
@@ -244,12 +287,11 @@
               "RelativeToolTip": "Business\\DTO\\Auth\\LoginUserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T03:22:41.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T03:22:41.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UpdatePostDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdatePostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Update\\UpdatePostDTO.cs",
@@ -261,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CreateMembershipDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateMembershipDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreateMembershipDTO.cs",
@@ -273,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "GenericRepo.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Base\\GenericRepo.cs",
               "RelativeDocumentMoniker": "DATA\\Base\\GenericRepo.cs",
@@ -285,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CreateUserDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreateUserDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreateUserDTO.cs",
@@ -297,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "CreatePostDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Create\\CreatePostDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Create\\CreatePostDTO.cs",
@@ -309,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "UpdateUserDTO.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\Business\\DTO\\Update\\UpdateUserDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTO\\Update\\UpdateUserDTO.cs",
@@ -321,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\Review.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\Review.cs",
@@ -333,19 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserBusiness.cs",
-              "DocumentMoniker": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
-              "RelativeDocumentMoniker": "Business\\Category\\UserBusiness.cs",
-              "ToolTip": "D:\\FconBE\\BE\\Business\\Category\\UserBusiness.cs",
-              "RelativeToolTip": "Business\\Category\\UserBusiness.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwv3sAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:11:56.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "exe201cContext.cs",
               "DocumentMoniker": "D:\\FconBE\\BE\\DATA\\Models\\exe201cContext.cs",
               "RelativeDocumentMoniker": "DATA\\Models\\exe201cContext.cs",
