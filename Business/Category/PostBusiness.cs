@@ -233,7 +233,7 @@ namespace Business.Category
                     Description = postdto.Description,
                     BudgetOrSalary = postdto.BudgetOrSalary,
                     Skills = postdto.Skills,
-                    Status = postdto.Status,
+                    Status = "Pending",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,
                     ImgUrl = postdto.ImgUrl
