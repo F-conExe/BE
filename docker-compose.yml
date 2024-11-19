@@ -9,6 +9,7 @@ services:
       - 7979:8080
     networks:
       - mssql-network
+      
 networks:
   mssql-network:
-    driver: bridge
+    external: true
