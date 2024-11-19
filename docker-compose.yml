@@ -3,5 +3,9 @@ services:
     build: 
      context: .
      target : final
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=mssql:1433;Database=exe201c_v2;User ID=sa;Password=Tam@4545"
     ports:
       - 7979:8080
+    networks:
+      - mssql-network
